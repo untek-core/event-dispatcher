@@ -13,4 +13,5 @@ return static function (ContainerConfigurator $configurator): void {
     $services->alias(SymfonyComponentEventDispatcherInterface::class, EventDispatcher::class);
     $services->alias(SymfonyContractEventDispatcherInterface::class, EventDispatcher::class);
     $services->alias(PsrEventDispatcherInterface::class, EventDispatcher::class);
+    $services->alias('event_dispatcher', EventDispatcher::class);
 };
