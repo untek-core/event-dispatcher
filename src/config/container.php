@@ -6,6 +6,8 @@ use Untek\Core\Container\Interfaces\ContainerConfiguratorInterface;
 use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 use Untek\Core\EventDispatcher\Libs\EventDispatcherConfigurator;
 
+\Untek\Core\Code\Helpers\DeprecateHelper::hardThrow();
+
 return function (ContainerConfiguratorInterface $containerConfigurator) {
     $containerConfigurator->singleton(EventDispatcherConfiguratorInterface::class, EventDispatcherConfigurator::class);
     $containerConfigurator->singleton(EventDispatcherInterface::class, EventDispatcher::class);
