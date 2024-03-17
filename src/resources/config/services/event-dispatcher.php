@@ -7,7 +7,7 @@ use Symfony\Component\EventDispatcher\EventDispatcherInterface as SymfonyCompone
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface as SymfonyContractEventDispatcherInterface;
 
 return static function (ContainerConfigurator $configurator): void {
-    $services = $configurator->services();
+    $services = $configurator->services()->defaults()->public();
 
     $services->set(EventDispatcher::class, EventDispatcher::class);
     $services->alias(SymfonyComponentEventDispatcherInterface::class, EventDispatcher::class);
