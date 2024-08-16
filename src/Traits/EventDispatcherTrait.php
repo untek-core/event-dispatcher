@@ -7,6 +7,8 @@ use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Untek\Core\Instance\Helpers\ClassHelper;
 
+//\Untek\Core\Code\Helpers\DeprecateHelper::hardThrow();
+
 trait EventDispatcherTrait
 {
 

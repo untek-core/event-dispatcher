@@ -11,6 +11,8 @@ use Untek\Core\EventDispatcher\Interfaces\EventDispatcherConfiguratorInterface;
 use Untek\Core\EventDispatcher\Traits\EventDispatcherTrait;
 use Untek\Core\Instance\Helpers\ClassHelper;
 
+\Untek\Core\Code\Helpers\DeprecateHelper::hardThrow();
+
 class EventDispatcherConfigurator implements EventDispatcherConfiguratorInterface
 {
 

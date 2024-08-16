@@ -6,6 +6,8 @@ use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface as SymfonyComponentEventDispatcherInterface;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface as SymfonyContractEventDispatcherInterface;
 
+\Untek\Core\Code\Helpers\DeprecateHelper::hardThrow();
+
 return static function (ContainerConfigurator $configurator): void {
     $services = $configurator->services()->defaults()->public();
 

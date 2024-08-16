@@ -2,6 +2,8 @@
 
 namespace Untek\Core\EventDispatcher\Traits;
 
+\Untek\Core\Code\Helpers\DeprecateHelper::hardThrow();
+
 trait EventSkipHandleTrait
 {
 

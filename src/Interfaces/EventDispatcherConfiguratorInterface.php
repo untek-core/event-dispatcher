@@ -2,6 +2,8 @@
 
 namespace Untek\Core\EventDispatcher\Interfaces;
 
+\Untek\Core\Code\Helpers\DeprecateHelper::hardThrow();
+
 interface EventDispatcherConfiguratorInterface
 {
 
